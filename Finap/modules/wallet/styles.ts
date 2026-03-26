@@ -1,22 +1,173 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#F8F9FE',
+  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
     paddingHorizontal: 20,
-    paddingTop: 60,
+    backgroundColor: '#FFFFFF',
+    borderBottomWidth: 1,
+    borderBottomColor: '#F0F2F5',
   },
-  title: {
-    fontSize: 28,
+  headerTitle: {
+    fontSize: 20,
     fontWeight: '700',
-    color: '#1C1C1E',
-    marginBottom: 20,
+    color: '#1A1A1A',
   },
-  card: {
+  scrollView: {
+    flex: 1,
+  },
+  balanceCard: {
+    backgroundColor: '#0022FF',
+    margin: 20,
+    borderRadius: 24,
+    padding: 24,
+    position: 'relative',
+    overflow: 'hidden',
+    shadowColor: '#0022FF',
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.3,
+    shadowRadius: 15,
+    elevation: 8,
+  },
+  balanceLabel: {
+    fontSize: 15,
+    color: '#FFFFFFE6',
+    marginBottom: 12,
+  },
+  balanceValue: {
+    fontSize: 32,
+    fontWeight: '800',
+    color: '#FFFFFF',
+    marginBottom: 12,
+  },
+  balanceTrend: {
+    fontSize: 14,
+    color: '#FFFFFFE6',
+    fontWeight: '600',
+  },
+  balanceIcon: {
+    position: 'absolute',
+    top: 24,
+    right: 24,
+    opacity: 0.8,
+  },
+  section: {
+    marginTop: 24,
+  },
+  sectionHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    marginBottom: 16,
+  },
+  sectionTitle: {
+    fontSize: 20,
+    fontWeight: '700',
+    color: '#1A1A1A',
+  },
+  addCardButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  addCardText: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: '#0022FF',
+    marginLeft: 6,
+  },
+  cardsList: {
+    paddingLeft: 20,
+    paddingBottom: 4,
+  },
+  cardItem: {
+    width: 260,
+    height: 160,
+    borderRadius: 24,
+    padding: 24,
+    marginRight: 16,
+    justifyContent: 'space-between',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.1,
+    shadowRadius: 10,
+    elevation: 4,
+  },
+  cardHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+  },
+  visaText: {
+    color: '#FFFFFF',
+    fontSize: 18,
+    fontStyle: 'italic',
+    fontWeight: '800',
+  },
+  cardLabel: {
+    fontSize: 12,
+    color: '#FFFFFFCC',
+    textTransform: 'uppercase',
+    letterSpacing: 1,
+    marginBottom: 4,
+  },
+  cardValue: {
+    fontSize: 24,
+    fontWeight: '700',
+    color: '#FFFFFF',
+  },
+  bankItem: {
     backgroundColor: '#FFFFFF',
     borderRadius: 24,
-    padding: 20,
-    marginBottom: 20,
+    marginHorizontal: 20,
+    marginBottom: 16,
+    padding: 16,
+    flexDirection: 'row',
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.05,
+    shadowRadius: 10,
+    elevation: 2,
+  },
+  bankIconContainer: {
+    width: 52,
+    height: 52,
+    borderRadius: 16,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 16,
+  },
+  bankContent: {
+    flex: 1,
+  },
+  bankName: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: '#1A1A1A',
+    marginBottom: 2,
+  },
+  bankType: {
+    fontSize: 13,
+    color: '#8E8E93',
+  },
+  bankAmountContainer: {
+    alignItems: 'flex-end',
+  },
+  bankAmount: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: '#1A1A1A',
+    marginBottom: 2,
+  },
+  bankStatus: {
+    fontSize: 11,
+    fontWeight: '700',
   },
 });
