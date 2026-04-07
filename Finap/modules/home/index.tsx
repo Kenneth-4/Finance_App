@@ -60,9 +60,9 @@ export default function HomeModule() {
       {/* Header */}
       <View style={styles.header}>
         <View style={styles.userInfo}>
-          <Image 
-            source={{ uri: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80' }} 
-            style={styles.avatar} 
+          <Image
+            source={{ uri: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80' }}
+            style={styles.avatar}
           />
           <View>
             <Text style={styles.greeting}>Good Morning</Text>
@@ -142,7 +142,7 @@ export default function HomeModule() {
       {transactions.map(item => (
         <View key={item.id} style={styles.transactionItem}>
           <View style={[styles.iconContainer, { backgroundColor: item.bgColor }]}>
-             <Ionicons name={item.icon as any} size={24} color={item.iconColor} />
+            <Ionicons name={item.icon as any} size={24} color={item.iconColor} />
           </View>
           <View style={styles.transactionDetails}>
             <Text style={styles.transactionTitle}>{item.title}</Text>
